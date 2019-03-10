@@ -43,8 +43,8 @@ def raw_value_comparison(coh, plot=False):
         plt.xlabel('Average CN Difference Between Alignments', fontsize=14)
         plt.ylabel('Genes', fontsize=14)
         sns.despine()
-        plt.savefig('./genehists/'+coh+'_genehist.pdf')
-        plt.savefig('./genehists/'+coh+'_genehist.png')
+        plt.savefig(coh+'_genehist.pdf')
+        plt.savefig(coh+'_genehist.png')
         plt.clf()
 
     return results
@@ -71,8 +71,8 @@ def sequential_cohort_test_raw_values(cohs, plot=False):
         sns.despine()
         plt.savefig('GeneDevianceDropoff.pdf')
         plt.savefig('GeneDevianceDropoff.png')
-        df_r.to_csv('./genehists/LargestDifferences.tsv', sep='\t', index=False)
-        df.to_csv('./genehists/LargestDifferenceGenes_ByCount.tsv', sep='\t', index=True)
+        df_r.to_csv('LargestDifferences.tsv', sep='\t', index=False)
+        df.to_csv('LargestDifferenceGenes_ByCount.tsv', sep='\t', index=True)
 
 if __name__ == '__main__':
 
