@@ -4,6 +4,9 @@
 Created on Thu Feb 22 17:28:54 2018
 
 @author: galengao
+
+This is the original analysis code as it exists in the environment where it was writen and initially run.
+Portions and modifications of this script constitute all other .py scripts in this directory.
 """
 import numpy as np
 import pandas as pd
