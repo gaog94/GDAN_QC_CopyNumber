@@ -28,5 +28,5 @@ python scripts/Focal_Peak_Gene_Overlap.py /path/to/hg38/gistic/results/ /path/to
 
 To print a quick summary of which documented copy number driver genes (this list was manually compiled from the TCGA marker papers) are still conserved/called in legacy and harmonized runs:
 ```
-python scripts/Driver_Conservation.py ../Documented_Driver_Differences.txt
+python scripts/Driver_Conservation.py Documented_Driver_Differences.txt
 ```
